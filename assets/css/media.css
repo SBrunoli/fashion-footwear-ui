@@ -1,0 +1,164 @@
+@import url(style.css);
+
+/* ================= MEDIA 700PX ================= */
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  .nav-main {
+    gap: 5rem;
+  }
+
+  .search-box {
+    height: 42%;
+  }
+  .search-icon {
+    padding-right: 1rem;
+  }
+
+  .box-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  .box-icons img {
+    width: 60px;
+  }
+
+  .category-saltos,
+  .category-shoes {
+    width: 11.875rem;
+    height: 10.4375rem;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 1rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  .social-icons {
+    font-size: 2.3rem;
+    margin: auto;
+    margin-left: 4rem;
+  }
+}
+
+/* ================= MEDIA 1200PX ================= */
+@media (min-width: 1200px) {
+  .menu-icon {
+    content: url(../icons/profile.svg);
+  }
+
+  .search-box {
+    width: 40%;
+  }
+  .search {
+    width: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .navigation a {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    transition: var(--transition-time);
+  }
+
+  .navigation a:hover {
+    border-bottom: 3px solid #a75500;
+    transition: var(--transition-time);
+  }
+
+  .navigation li + li {
+    margin-left: 1rem;
+  }
+
+  .box-icons {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .category-saltos,
+  .category-shoes {
+    width: 350px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .category-text {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+  }
+  .category-text img {
+    width: 2rem;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 1rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .item-name {
+    font-size: 1rem;
+  }
+  .item-price {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    justify-content: center;
+    gap: 9rem;
+  }
+  .hamburguer-menu-box {
+    display: none;
+  }
+}

@@ -1,0 +1,389 @@
+/* ================= CONFIGURAÇÕES E VARIÁVEIS ================= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Revalia&display=swap");
+
+:root {
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-revalia: "Revalia", sans-serif;
+  --color-primary: #a75500;
+  --color-secondary: #763e02;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-hover: #cfc0c0;
+  --color-card-bg: rgba(167, 147, 126, 0.153);
+  --font-size-body: 1rem;
+  --font-size-title: 1.5rem;
+  --font-size-search-text: 0.9rem;
+  --font-size-category-text: 0.9rem;
+  --font-size-item-name: 0.8rem;
+  --font-size-item-price: 1rem;
+  --font-size-buy-button: 0.9rem;
+  --font-size-social-icon: 2.3rem;
+  --transition-time: all ease 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-poppins);
+}
+
+body {
+  height: 100vh;
+  min-width: 24.625rem;
+  font-size: var(--font-size-body);
+}
+
+/* ================= HEADER SEÇÃO ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+}
+
+h1 {
+  display: inline-block;
+  font-family: var(--font-family-revalia);
+  font-size: var(--font-size-title);
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.navigation {
+  display: none;
+}
+
+.search-box {
+  position: relative;
+  height: 1.5rem;
+  width: 40%;
+  border-radius: 0.5rem;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 0.3rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.5rem;
+  transition: all ease var(--transition-time);
+}
+
+.search::placeholder {
+  font-size: var(--font-size-search-text);
+  color: var(--color-white);
+}
+
+.search:focus {
+  padding-left: 0.5rem;
+  transition: all ease var(--transition-time);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  height: 20px;
+  transform: translate(-0%, -50%);
+}
+
+.box-icons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+}
+
+.box-icons img {
+  width: 50px;
+}
+
+/* ================= HAMBURGUER MENU ================= */
+.hamburguer-menu-box {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 45%;
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--color-white);
+
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: var(--transition-time);
+}
+
+.hamburguer-menu-box.active {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.hamburguer-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.close-menu {
+  width: 30px;
+  cursor: pointer;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.auxiliar-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  color: var(--color-black);
+  text-decoration: none;
+  padding: 12px 0;
+}
+
+.auxiliar-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.hamburguer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.opcao-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  color: var(--color-black);
+  text-decoration: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.opcao-link img {
+  width: 12px;
+  opacity: 0.6;
+}
+
+/* ================= MAIN CONTENT ================= */
+.hero {
+  width: 100%;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+
+.category-saltos,
+.category-shoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 12px;
+  border-radius: 0.8rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.category-saltos {
+  background-image: url(../images/saltos-categoria.jpg);
+}
+.category-shoes {
+  background-image: url(../images/tenis-categoria.jpg);
+}
+
+.category-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding: 0.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-category-text);
+  font-weight: 500;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.category-text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-text img {
+  width: 18px;
+  height: auto;
+}
+
+/* ITEMS GRID */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-card-bg);
+  border-radius: 0.5rem;
+  transition: all ease 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  padding: 0.3rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-name {
+  font-size: var(--font-size-item-name);
+}
+
+.infos-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.item-price {
+  font-size: var(--font-size-item-price);
+  font-weight: 650;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.8rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-buy-button);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: var(--transition-time);
+}
+
+.buy:hover {
+  background-color: #763e02;
+  transition: var(--transition-time);
+  transform: scale(1.05);
+}
+
+/* ================= FOOTER SEÇÃO ================= */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-family: var(--font-family-revalia);
+  font-size: var(--font-size-title);
+  font-weight: 400;
+  padding-top: 1.1rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: var(--font-size-social-icon);
+}
+
+.menu-box,
+.help-box {
+  position: relative;
+  padding: 1rem 1rem;
+}
+
+.menu,
+.help {
+  list-style: none;
+}
+
+.menu a,
+.help a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.menu a:hover,
+.help a:hover {
+  border-bottom: 2px solid var(--color-white);
+  transition: var(--transition-time);
+}
