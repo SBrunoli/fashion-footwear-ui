@@ -43,6 +43,10 @@ Aqui estão as principais tecnologias utilizadas no desenvolvimento deste projet
 
 Abaixo, você pode ver a comparação entre o design planejado no Figma e o resultado final no navegador, além de uma demonstração do menu interativo no mobile.
 <p align="center">
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/1784d81b-385c-419a-a209-3c287906c240" />
+</p>
+
+<p align="center">
 <img width="200" height="400" alt="Interface Gráfica do Projeto" src="https://github.com/user-attachments/assets/e16b3941-3df4-40d2-9a41-1fe6c7a58b96" />
 <img width="200" height="400" alt="Hamburguer Menu Aberto" src="https://github.com/user-attachments/assets/e1b77733-78cc-4c3c-8d18-674465659fdc" />
 </p>
@@ -51,4 +55,4 @@ Abaixo, você pode ver a comparação entre o design planejado no Figma e o resu
 
 O arquivo original do Figma, contendo toda a estrutura de camadas e o Design System, está disponível para visualização:
 
-👉 [**Clique aqui para visualizar o Projeto no Figma**](COLE_O_LINK_DO_FIGMA_AQUI)
+👉 [**Clique aqui para visualizar o Projeto no Figma**](https://www.figma.com/design/GRQZwRWptHxjhzxlcx35Gj/Bella-Passos---shoe-store?node-id=0-1&t=cPE5JLcl0mxCeOPw-1)
